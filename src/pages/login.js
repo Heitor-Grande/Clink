@@ -6,14 +6,14 @@ function Login() {
 
     return (
         <>
-            <div className="m-3">
-                <div className="card bg-dark border">
-                    <div className="card-body bg-dark">
+            <div className="p-3 bg-dark">
+                <div className="card border">
+                    <div className="card-body">
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-6 col-md-6 col-lg-5 text-center">
 
-                                    <form className="w-100 border p-2 rounded">
+                                    <form className="w-100 p-2 border rounded">
 
                                         <img src={Logo} alt="" className="d-block m-auto w-25" />
                                         <br />
@@ -26,40 +26,28 @@ function Login() {
                                             <label >Senha</label>
                                         </div>
 
-                                        <button type="submit" className="btn btn-light w-50"><i className="bi bi-box-arrow-in-right me-2"></i>ENTRAR</button>
+                                        <button type="submit" className="m-auto d-block btn btn-dark w-50"><i className="bi bi-box-arrow-in-right"></i> Acessar</button>
                                         <br />
-                                        <button type="button" className="btn btn-link">Esqueceu a senha? Recupere aqui.</button>
+                                        <button type="button" className="m-auto d-block btn btn-link">Esqueceu a senha? Recupere aqui.</button>
                                     </form>
                                 </div>
 
                                 <div className="col-sm-6 col-md-6 col-lg-5 mx-auto">
                                     <div className="card mt-2">
                                         <div className="card-body">
-                                            <p><b>Ainda não tem sua organização ?</b></p>
+                                            <p><b>Está procurando os melhores profissionais da saúde na sua cidade ?</b></p>
                                             <ul>
-                                                <li>Monte a org dos seus sonhos com os melhores jogadores de CS.</li>
-                                                <li>Dispute torneios mata-mata de até 8 players.</li>
-                                                <li>Contrate jogadores de outras organizações.</li>
-                                                <li>Monte o estilo de jogo da sua organização.</li>
-                                                <li>Controle sua organização do celular ou do computador!</li>
+                                                <li>Crie sua conta gratuitamente.</li>
+                                                <li>Encontre os profissionais da sua cidade.</li>
+                                                <li>Faça o agendamento na data de sua preferência.</li>
+                                                <li>Receba notificações de aviso antes da consulta.</li>
                                             </ul>
 
                                         </div>
                                         <div className="card-footer text-center">
                                             <button className="btn btn-dark text-white" onClick={function () {
                                                 navigate("/cad/nova/organizacao")
-                                            }}><i className="bi bi-building-fill-add"></i> MONTAR ORGANIZAÇÃO</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div className="card mt-2">
-                                        <div className="card-body">
-                                            <p><b>Notas de atualizações:</b></p>
-                                            <ul>
-                                                <li>Sem atualizações recentes</li>
-                                            </ul>
-
+                                            }}><i className="fs-5 bi bi-person-add me-1"></i>Encontrar Profissionais</button>
                                         </div>
                                     </div>
                                 </div>
@@ -93,10 +81,10 @@ function Login() {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
-                                            <h5 className="card-title">Organização</h5>
-                                            <p className="card-text mb-0">Monte a organização e a line up dos sonhos.</p>
-                                            <p className="card-text mt-0 mb-0">Cuide da sua organização e leve ela ao top 10 do mundial.</p>
-                                            <p className="card-text mt-0">Comece com uma line-up com jogadores em início de carreira, ajude-os a evoluir ou contrate outros.</p>
+                                            <h5 className="card-title">Consultório</h5>
+                                            <p className="card-text mb-0">Cadastre ou encontre os melhores consultórios da sua cidade.</p>
+                                            <p className="card-text mt-0 mb-0">Disponibilize a agenda dos profissionais do consultório.</p>
+                                            <p className="card-text mt-0">Tenha o controle total da agenda dos seus profissionais.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -112,10 +100,10 @@ function Login() {
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
-                                            <h5 className="card-title">Jogadores</h5>
-                                            <p className="card-text mb-0">Comece com jogadores com seus MP(Major Points) em inicio de carreira.</p>
-                                            <p className="card-text mt-0 mb-0">Evolua seus jogadores ou contrate jogadores mais experientes.</p>
-                                            <p className="card-text mt-0">Alguns jogadores são unicos, mas podem trocar de organização na janela de transferência.</p>
+                                            <h5 className="card-title">Pacientes</h5>
+                                            <p className="card-text mb-0">Encontre os profissionais da saúde de sua preferência.</p>
+                                            <p className="card-text mt-0 mb-0">Lista de consultórios mais próximos de você.</p>
+                                            <p className="card-text mt-0">Faça o agendamento no dia e horário de sua preferência.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -129,13 +117,13 @@ function Login() {
                     <br />
                     <div className="col-sm-10 col-md-8 col-lg-4 m-auto">
 
-                        <div className="card mb-3 bg-warning text-white">
+                        <div className="card mb-3 bg-secondary text-white">
                             <div className="row g-0 text-center">
                                 <div className="card-body">
-                                    <h5 className="card-title">Comunidade</h5>
-                                    <p className="card-text mb-0"><i className="fs-1 bi bi-discord"></i></p>
+                                    <h5 className="card-title">Cadastrar meu consultório</h5>
+                                    <p className="card-text mb-0"><i className="bi bi-building-fill-add fs-3"></i></p>
                                     <br />
-                                    <button className="btn btn-dark">Juntar-se ao discord</button>
+                                    <button className="btn btn-dark">Cadastrar Consultório</button>
                                 </div>
 
                             </div>
