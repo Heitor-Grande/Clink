@@ -117,7 +117,7 @@ function Login() {
                     <br />
                     <div className="col-sm-10 col-md-8 col-lg-4 m-auto">
 
-                        <div className="card mb-3 bg-secondary text-white">
+                        <div className="card mb-3 bg-white">
                             <div className="row g-0 text-center">
                                 <div className="card-body">
                                     <h5 className="card-title">Cadastrar meu consultório</h5>
