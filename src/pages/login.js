@@ -6,7 +6,7 @@ function Login() {
 
     return (
         <>
-            <div className="p-3 bg-dark">
+            <div className="p-3">
                 <div className="card border">
                     <div className="card-body">
                         <div className="container">
@@ -26,7 +26,7 @@ function Login() {
                                             <label >Senha</label>
                                         </div>
 
-                                        <button type="submit" className="m-auto d-block btn btn-dark w-50"><i className="bi bi-box-arrow-in-right"></i> Acessar</button>
+                                        <button type="submit" className="m-auto d-block fundoBTN w-50"><i className="bi bi-box-arrow-in-right me-2"></i> Acessar</button>
                                         <br />
                                         <button type="button" className="m-auto d-block btn btn-link">Esqueceu a senha? Recupere aqui.</button>
                                     </form>
@@ -45,9 +45,9 @@ function Login() {
 
                                         </div>
                                         <div className="card-footer text-center">
-                                            <button className="btn btn-dark text-white" onClick={function () {
+                                            <button className="fundoBTN" onClick={function () {
                                                 navigate("/cad/nova/organizacao")
-                                            }}><i className="fs-5 bi bi-person-add me-1"></i>Encontrar Profissionais</button>
+                                            }}><i className="bi bi-person-add me-2"></i>Encontrar Profissionais</button>
                                         </div>
                                     </div>
                                 </div>
@@ -123,9 +123,8 @@ function Login() {
                                     <h5 className="card-title">Cadastrar meu consultório</h5>
                                     <p className="card-text mb-0"><i className="bi bi-building-fill-add fs-3"></i></p>
                                     <br />
-                                    <button className="btn btn-dark">Cadastrar Consultório</button>
+                                    <button className="fundoBTN">Cadastrar Consultório</button>
                                 </div>
-
                             </div>
                         </div>
                     </div>

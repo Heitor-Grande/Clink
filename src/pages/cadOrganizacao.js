@@ -6,7 +6,7 @@ function CadOrganizacao() {
 
     return (
         <>
-            <div className="p-3 bg-dark">
+            <div className="p-3">
                 <div className="card border">
                     <div className="card-body">
                         <div className="conatiner">
@@ -16,9 +16,9 @@ function CadOrganizacao() {
                                         <div className="card-body">
                                             <h5 className="card-text text-center">Já possuí cadastro ?</h5>
                                             <br />
-                                            <button className="d-block w-50 mx-auto btn btn-dark" onClick={function () {
+                                            <button className="d-block w-50 mx-auto fundoBTN" onClick={function () {
                                                 navigate("/")
-                                            }} ><i className="bi bi-box-arrow-in-right"></i> Fazer Login</button>
+                                            }} ><i className="bi bi-box-arrow-in-right me-2"></i>Fazer Login</button>
                                         </div>
                                     </div>
                                 </div>
