@@ -1,15 +1,8 @@
-.bgall{
+.bg-1{
     background-color: #99B4BF;
 }
 
-.btnPadrao{
-
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: white;
-}
-
-.fundoBTN{
+.btn-padrao-1{
     color: white;
     border-radius: 4px;
     border: none;

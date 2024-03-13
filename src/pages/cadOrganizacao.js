@@ -16,7 +16,7 @@ function CadOrganizacao() {
                                         <div className="card-body">
                                             <h5 className="card-text text-center">Já possuí cadastro ?</h5>
                                             <br />
-                                            <button className="d-block w-50 mx-auto fundoBTN" onClick={function () {
+                                            <button className="d-block w-50 mx-auto btn-padrao-1" onClick={function () {
                                                 navigate("/")
                                             }} ><i className="bi bi-box-arrow-in-right me-2"></i>Fazer Login</button>
                                         </div>
