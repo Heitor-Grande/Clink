@@ -1,8 +1,8 @@
-.bg-1{
+.bg-1 {
     background-color: #99B4BF;
 }
 
-.btn-padrao-1{
+.btn-padrao-1 {
     color: white;
     border-radius: 4px;
     border: none;
@@ -12,4 +12,10 @@
     padding-bottom: 6px;
     border-width: 1px;
     background-color: #99B4BF;
+    text-decoration: none;
+}
+
+.elemento-hidden {
+
+    display: none;
 }

@@ -1,8 +1,31 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Logo from "../assets/android-chrome-512x512.png"
+import { useEffect } from "react"
 function Login() {
 
     const navigate = useNavigate()
+
+    useEffect(function () {
+
+
+        window.addEventListener("scroll", function () {
+            const coordenadas_1 = document.querySelector(".rolagem1")
+            const coordenadas_2 = document.querySelector(".rolagem2")
+            const coordenadas_3 = document.querySelector(".rolagem3")
+
+            if (coordenadas_1 && coordenadas_1.getBoundingClientRect().bottom <= window.innerHeight) {
+                coordenadas_1.className = 'col-sm-10 col-md-8 col-lg-8 animate__animated animate__backInLeft rolagem1'
+            }
+
+            if (coordenadas_2 && coordenadas_2.getBoundingClientRect().bottom <= window.innerHeight) {
+                coordenadas_2.className = "col-sm-10 col-md-8 col-lg-8 ms-auto animate__animated animate__backInRight rolagem2"
+            }
+
+            if (coordenadas_3 && coordenadas_3.getBoundingClientRect().bottom <= window.innerHeight) {
+                coordenadas_3.className = "col-sm-10 col-md-8 col-lg-4 m-auto animate__animated animate__bounceIn rolagem3"
+            }
+        })
+    }, [])
 
     return (
         <>
@@ -45,9 +68,7 @@ function Login() {
 
                                         </div>
                                         <div className="card-footer text-center">
-                                            <button className="btn-padrao-1" onClick={function () {
-                                                navigate("/cad/nova/organizacao")
-                                            }}><i className="bi bi-person-add me-2"></i>Encontrar Profissionais</button>
+                                            <Link to="/cad/nova/organizacao" className="btn-padrao-1"><i className="bi bi-person-add me-2"></i>Encontrar Profissionais</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +94,7 @@ function Login() {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-sm-10 col-md-8 col-lg-8">
+                        <div className="elemento-hidden rolagem1">
                             <div className="card mb-3">
                                 <div className="row g-0">
                                     <div className="col-lg-2 col-sm-2 col-md-4 text-center pt-2">
@@ -92,7 +113,7 @@ function Login() {
                         </div>
 
 
-                        <div className="col-sm-10 col-md-8 col-lg-8 ms-auto">
+                        <div className="elemento-hidden rolagem2">
                             <div className="card mb-3">
                                 <div className="row g-0">
                                     <div className="col-lg-2 col-sm-2 col-md-4 text-center pt-2">
@@ -115,7 +136,7 @@ function Login() {
                     <br />
                     <br />
                     <br />
-                    <div className="col-sm-10 col-md-8 col-lg-4 m-auto">
+                    <div className="elemento-hidden rolagem3">
 
                         <div className="card mb-3 bg-white">
                             <div className="row g-0 text-center">
@@ -130,6 +151,118 @@ function Login() {
                     </div>
                 </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+
+            <footer className="text-center text-lg-start bg-body-tertiary text-muted">
+
+                <section className="d-flex justify-content-center justify-content-lg-between">
+
+                    <div>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-twitter"></i>
+                        </a>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-google"></i>
+                        </a>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" className="me-4 text-reset">
+                            <i className="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                </section>
+
+                <section className="">
+                    <div className="container text-center text-md-start mt-5">
+                        <div className="row mt-3">
+
+                            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <h6 className="text-uppercase fw-bold mb-4">
+                                    <i className="fas fa-gem me-3"></i>Grande Soluções Digitais
+                                </h6>
+                                <p>
+                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+
+                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                <h6 className="text-uppercase fw-bold mb-4">
+
+                                </h6>
+                                <p>
+                                    <a href="#!" className="text-reset">Angular</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">React</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">Vue</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">Laravel</a>
+                                </p>
+                            </div>
+
+
+
+                            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                <h6 className="text-uppercase fw-bold mb-4">
+                                    Useful links
+                                </h6>
+                                <p>
+                                    <a href="#!" className="text-reset">Pricing</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">Settings</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">Orders</a>
+                                </p>
+                                <p>
+                                    <a href="#!" className="text-reset">Help</a>
+                                </p>
+                            </div>
+
+
+
+                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                                <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                                <p>
+                                    <i className="fas fa-envelope me-3"></i>
+                                    info@example.com
+                                </p>
+                                <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                                <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <div className="text-center p-4">
+                    © 2023 Copyright <b> </b>
+                    <a className="text-reset fw-bold" href="/">GSD</a>
+                </div>
+
+            </footer>
+
         </>
     )
 }
